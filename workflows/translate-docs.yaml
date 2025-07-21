@@ -1,0 +1,47 @@
+name: Translate profile/README (FR to EN)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'profile/README.md' 
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  translate_profile_readme: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Translate Markdown Documentation for profile/README.md
+        uses: KevinRohn/gh-action-markdown-translate-ai@v1
+        with:
+          api_key: ${{ secrets.AI_API_KEY }}
+          service_provider: 'gemini'
+          model: 'gemini-2.0-flash'
+          source_language: 'French'
+          target_language: 'English'
+          file_path: 'profile/README.md' 
+          output_file_path: './profile/README-en.md' 
+
+      - name: Check for changes after translation
+        id: git-status
+        run: |
+          if [[ $(git status --porcelain) ]]; then
+            echo "::set-output name=has_changes::true"
+            echo "Detected changes for commit."
+          else
+            echo "No changes detected for commit."
+          fi
+        shell: /usr/bin/bash -e {0}
+
+      - name: Commit and Push Translated Files
+        if: steps.git-status.outputs.has_changes == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs(i18n): Automatic FR->EN Markdown translation updates for profile/README.md"
+          branch: main
