@@ -7,7 +7,7 @@
 ### Liens externes
 
 - [English version 🇬🇧](./README-en.md)
-- [Frontend (FR)](../../../socme/front/README.md)
+- [Frontend (FR)](../../../../socme/front/README.md)
 - [Frontend (EN)](../../socme/front/README-en.md)
 - [Backend (FR)](../../socme/back/README.md)
 - [Backend (EN)](../../socme/back/README-en.md)
