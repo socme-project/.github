@@ -7,7 +7,7 @@
 ### Liens externes
 
 - [English version 🇬🇧](./README-en.md)
-- [Frontend (FR)](../../../../socme/front/README.md)
+- [Frontend (FR)](https://github.com/socme-project/socme/blob/main/front/README.md)
 - [Frontend (EN)](../../socme/front/README-en.md)
 - [Backend (FR)](../../socme/back/README.md)
 - [Backend (EN)](../../socme/back/README-en.md)
