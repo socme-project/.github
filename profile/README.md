@@ -87,8 +87,8 @@ interagir avec l’API Wazuh.
 
 #### Wazuh-nix
 
-[wazuh-nix](https://github.com/socme-project/wazuh-nix) : flake NixOS pour
-installer Wazuh (dashboard, manager, indexer).
+[wazuh-nix](https://github.com/socme-project/socme-os/blob/main/modules/wazuh.nix) : 
+fichier NixOS pour installer Wazuh sur les machines (dashboard, manager, indexer).
 
 #### NOTIFYme
 
