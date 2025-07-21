@@ -6,11 +6,11 @@
 
 ### Liens externes
 
-- [English version 🇬🇧](./docs/README-en.md)
-- [Frontend (FR)](./front/README.md)
-- [Frontend (EN)](./front/docs/README-en.md)
-- [Backend (FR)](./back/README.md)
-- [Backend (EN)](./back/docs/README-en.md)
+- [English version 🇬🇧](./README-en.md)
+- [Frontend (FR)](../../socme/front/README.md)
+- [Frontend (EN)](../../socme/front/README-en.md)
+- [Backend (FR)](../../socme/back/README.md)
+- [Backend (EN)](../../socme/back/README-en.md)
 
 ## Introduction
 
@@ -105,19 +105,19 @@ pour afficher des infos système sur les _nodes_.
 [OPSme](https://github.com/socme-project/opsme) : bibliothèque Go pour gérer une
 flotte de machines via SSH.
 
-#### Dépendances externes
+### Dépendances externes
 
-##### Wazuh
+#### Wazuh
 
 XDR open-source pour la surveillance des logs, fichiers, processus… Génère des
 alertes basées sur des règles. Mise à jour des règles via CI/CD recommandée.
 
-##### Suricata
+#### Suricata
 
 IDS open-source pour l’analyse réseau. Fonctionne via port mirroring ou TAP.
 Envoie ses alertes à Wazuh.
 
-##### Tailscale
+#### Tailscale
 
 VPN mesh facilitant la connexion sécurisée entre les _nodes_ et le _core_, sans
 ouverture de ports.
