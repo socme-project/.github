@@ -126,7 +126,7 @@ ouverture de ports.
 
 ### Déploiement client
 
-1. Créer un client sur le _core_ (Headscale) pour obtenir un token
+1. Créer un client sur le _core_ (via Tailscale) pour obtenir un token
 2. Installer la machine sur le réseau client
 3. Adapter la config NixOS (interfaces, mots de passe, hostname)
 4. Déployer l’agent Wazuh (via GPO par exemple)
