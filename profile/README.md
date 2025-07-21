@@ -8,9 +8,9 @@
 
 - [English version 🇬🇧](./README-en.md)
 - [Frontend (FR)](https://github.com/socme-project/socme/blob/main/front/README.md)
-- [Frontend (EN)](../../socme/front/README-en.md)
-- [Backend (FR)](../../socme/back/README.md)
-- [Backend (EN)](../../socme/back/README-en.md)
+- [Frontend (EN)](github.com/socme-project/socme/blob/main/front/README-en.md)
+- [Backend (FR)](github.com/socme-project/socme/blob/main/back/README.md)
+- [Backend (EN)](github.com/socme-project/socme/blob/main/back/README-en.md)
 
 ## Introduction
 
