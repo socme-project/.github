@@ -1,6 +1,6 @@
 # SOCme
 
-## Overview
+## Summary
 
 ### Table of Contents
 
@@ -20,7 +20,7 @@ A **Security Operations Center (SOC)** is a centralized cybersecurity team
 responsible for monitoring, detecting, analyzing, and responding to threats
 in real time. It is typically composed of analysts, engineers, and
 incident response experts. A SOC relies on tools such as
-**SIEM**, **EDR**, and other detection systems.
+**SIEMs**, **EDRs**, and other detection systems.
 
 Its main missions:
 
@@ -40,10 +40,9 @@ reproducible configurations, and clear documentation.
 
 ## Operation
 
-Collecting all client logs on a single server is too expensive. SOCme
+Retrieving all client logs on a single server is too expensive. SOCme
 is therefore **decentralized**: each client has a **node** responsible for
-local monitoring, which only sends **alerts** to a centralized
-**core**.
+local monitoring, which only sends **alerts** to a centralized **core**.
 
 ### Components
 
@@ -98,14 +97,14 @@ send notifications via different channels.
 #### FETCHme
 
 [FETCHme](https://github.com/socme-project/fetchme): `pfetch` configuration
-to display system info on the _nodes_.
+to display system information on the _nodes_.
 
 #### OPSme
 
 [OPSme](https://github.com/socme-project/opsme): Go library to manage a
 fleet of machines via SSH.
 
-### External Dependencies
+### External dependencies
 
 #### Wazuh
 
@@ -119,12 +118,12 @@ Sends its alerts to Wazuh.
 
 #### Tailscale
 
-Mesh VPN facilitating secure connection between _nodes_ and the _core_, without
+Mesh VPN facilitating secure connection between _nodes_ and _core_, without
 opening ports.
 
 ## In practice
 
-### Client Deployment
+### Client deployment
 
 1. Create a client on the _core_ (via Tailscale) to obtain a token
 2. Install the machine on the client network
@@ -138,7 +137,7 @@ It's fast. Depending on the client's IS, some steps can be automated.
 Then, define the alert rules with the client and configure the
 notifications. Examples:
 
-- Brute-force → mail to admin
+- Brute-force → mail to the admin
 - Compromise → mail + call
 - Specific alert → display on the client dashboard
 
@@ -151,3 +150,13 @@ During the RUN phase:
 - Analysis and response according to criticality
 - Creation of new rules if necessary
 - Documentation of events
+
+## Schemas
+
+### Application schema
+
+![Application schema](./src/schema-applicatif.png)
+
+### Network architecture
+
+![Network architecture](./src/architecture-reseau.png)
