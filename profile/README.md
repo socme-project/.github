@@ -87,7 +87,7 @@ interagir avec l’API Wazuh.
 
 #### Wazuh-nix
 
-[wazuh-nix](https://github.com/socme-project/socme-os/blob/main/modules/wazuh.nix) : 
+[wazuh-nix](https://github.com/socme-project/socme-os/blob/main/modules/wazuh.nix) :
 fichier NixOS pour installer Wazuh sur les machines (dashboard, manager, indexer).
 
 #### NOTIFYme
@@ -151,3 +151,13 @@ Pendant la phase RUN :
 - Analyse et réponse selon criticité
 - Création de nouvelles règles si nécessaire
 - Documentation des événements
+
+## Schémas
+
+### Schéma applicatif
+
+![Schéma applicatif](./src/schema-applicatif.png)
+
+### Architecture réseau
+
+![Architecture réseau](./src/architecture-reseau.png)
