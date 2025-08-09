@@ -95,7 +95,7 @@ fichier NixOS pour installer Wazuh sur les machines (dashboard, manager, indexer
 [NOTIFYme](https://github.com/socme-project/notifyme) : bibliothèque Go pour
 envoyer des notifications via différents canaux.
 
-#### FETCHme
+#### FETCHme (TO DO)
 
 [FETCHme](https://github.com/socme-project/fetchme) : configuration `pfetch`
 pour afficher des infos système sur les _nodes_.
