@@ -94,7 +94,7 @@ NixOS file to install Wazuh on machines (dashboard, manager, indexer).
 [NOTIFYme](https://github.com/socme-project/notifyme): Go library to
 send notifications via different channels.
 
-#### FETCHme
+#### FETCHme (TO DO)
 
 [FETCHme](https://github.com/socme-project/fetchme): `pfetch` configuration
 to display system information on the _nodes_.
@@ -119,7 +119,7 @@ Sends its alerts to Wazuh.
 #### Tailscale
 
 Mesh VPN facilitating secure connection between _nodes_ and _core_, without
-opening ports.
+port opening.
 
 ## In practice
 
